@@ -28,6 +28,7 @@ const sendData = ( nameval, emailval, phoneval, dateval, timeval, sRate, count) 
     localStorage.setItem("Obj", stringObj);
     let ojbChange = JSON.parse(localStorage.getItem("Obj"));
     console.log(ojbChange);
+    console.log(ojbChange);
 
     clearField();
   }
