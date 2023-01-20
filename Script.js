@@ -16,11 +16,18 @@ const sendData = ( nameval, emailval, phoneval, dateval, timeval, sRate, count) 
   if (sRate === count) {
     alert("Appointment Booked Successfully");
     swal("Great! " + nameval, "Appointment Booked Successfully", "success");
-    localStorage.setItem('Name', nameval);
-    localStorage.setItem('Email', emailval);
-    localStorage.setItem('Phone', phoneval);
-    localStorage.setItem('Date', dateval);
-    localStorage.setItem('Time', timeval);
+    
+    let myObj = {
+        name: nameval,
+        email: emailval,
+        phone: phoneval,
+        date: dateval,
+        time: timeval
+    };
+    let stringObj = JSON.stringify(myObj);
+    localStorage.setItem("Obj", stringObj);
+    let ojbChange = JSON.parse(localStorage.getItem("Obj"));
+    console.log(ojbChange);
 
     clearField();
   }
