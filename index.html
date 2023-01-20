@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointment Booking App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Book an Appointment</h1>
+                <h6>Enter the following details and submit our system will book appointment for you.</h6>
+            </div>
+            <form class="form" id="form">
+                <div class="form-control">
+                    <label>Name:</label>
+                    <input type="text" name="" id="name">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Msg</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Email:</label>
+                    <input type="Email" name="" id="email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Msg</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Phone:</label>
+                    <input type="number" name="" id="phone">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Msg</small>
+                </div>
+
+                <div class="form-control">
+                    <label>Time for Appointment:</label>
+                    <input type="date" name="" id="date">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Msg</small>
+                </div>
+
+                <div class="form-control">
+                    <input type="time" name="" id="time">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error Msg</small>
+                </div>
+                <input type="submit" value="GET A CALL" class="btn" name="">
+            </form>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="Script.js"></script>
+    </body>
+
+</html>
